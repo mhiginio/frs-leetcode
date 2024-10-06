@@ -22,9 +22,9 @@ class SolutionTest {
     private static Stream<Arguments> testSolution() {
         return Stream.of(
                 Arguments.of(buildMap("""
-                         2, -3,-3
+                         2, -3, 3
                         -5,-10, 1
-                        10, 30, 5"""), 7),
+                        10, 30,-5"""), 7),
                 Arguments.of(buildMap("0"), 1));
     }
 
