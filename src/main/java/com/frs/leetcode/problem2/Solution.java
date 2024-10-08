@@ -22,10 +22,6 @@ class Solution {
         return result;
     }
 
-    private static boolean isLand(char[][] grid, int row, int col) {
-        return grid[row][col] == '1';
-    }
-
     private void fillIsland(char[][] grid, int row, int col) {
         if (isOutOfRange(grid, row, col) || !isLand(grid, row, col)) {
             return;
@@ -34,6 +30,10 @@ class Solution {
         for (Movement direction : DIRECTIONS) {
             fillIsland(grid, row + direction.row(), col + direction.column());
         }
+    }
+
+    private static boolean isLand(char[][] grid, int row, int col) {
+        return grid[row][col] == '1';
     }
 
     private boolean isOutOfRange(char[][] grid, int row, int col) {
