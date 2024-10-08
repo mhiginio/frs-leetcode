@@ -20,7 +20,11 @@ class SolutionTest {
         return Stream.of(
             Arguments.of("abcabcbb", 3),
             Arguments.of("bbbbbbbbb", 1),
-            Arguments.of("pwwkew", 3)
+            Arguments.of("pwwkew", 3),
+            Arguments.of("abcde", 5),
+            Arguments.of("abcabcde", 5),
+            Arguments.of("a".repeat(50000), 1),
+            Arguments.of("abcdefghijklmnopqrst".repeat(5000), 20)
         );
     }
 
