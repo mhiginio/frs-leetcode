@@ -10,7 +10,8 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SolutionTest {
-    private final Solution solution = new Solution();
+//    private final Solution solution = new Solution();
+    private final RecursiveSolution solution = new RecursiveSolution();
 
     @ParameterizedTest(name = "{0} should return {1}")
     @MethodSource("testSolution")
