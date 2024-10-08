@@ -12,6 +12,7 @@ public class Solution {
         for (int right = 0; right < s.length(); right++) {
             int lastSeenIdx = s.charAt(right) - 'a';
             if (lastSeen[lastSeenIdx] >= left) {
+                // Update the max length and move left to the next value of the repeated character
                 maxLength = Math.max(maxLength, right - left);
                 left = lastSeen[lastSeenIdx] + 1;
             }
