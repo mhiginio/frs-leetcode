@@ -9,7 +9,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class SolutionTest {
 
-    private final Solution solution = new Solution();
+//    private final Solution solution = new Solution();
+    private final IterativeSolution solution = new IterativeSolution();
 
     @ParameterizedTest(name = "{0} should return {1}")
     @MethodSource("testSolution")
